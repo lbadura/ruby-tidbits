@@ -98,7 +98,7 @@ class ImageResizer
   end
 
   def output_usage
-    print "usage:\n./resize.rb -d [directory] -p [percent]\n"
+    print "usage:\n./resize.rb -d [directory] -p [percent] -o [output_directory]\n"
   end
 end
 
