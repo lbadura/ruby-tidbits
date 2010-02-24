@@ -13,10 +13,6 @@ class NBPScraper
     @page = Mechanize.new().get(@url)
   end
 
-  def load_page
-    @agent.get(@url)
-  end
-
   def price
     regexp = Regexp.new(@currency_code)
     @page.search('//tr[@valign="middle"]').each do |tr|
